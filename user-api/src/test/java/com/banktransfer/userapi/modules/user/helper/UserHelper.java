@@ -31,13 +31,17 @@ public class UserHelper {
                 CNPJ, TEST_EMAIL, TEST_NAME);
     }
 
-    public static User oneUserCpf() {
+    public static User oneCpfUser() {
         return new User(1L, TEST_NAME, CPF, null,
                 TEST_EMAIL, TEST_NAME);
     }
 
-    public static User oneUserCnpj() {
+    public static User oneCnpjUser() {
         return new User(1L, TEST_NAME, null, CNPJ,
                 TEST_EMAIL, TEST_NAME);
+    }
+
+    public static UserRequest oneUserRequestWithoutDocument() {
+        return new UserRequest(TEST_NAME, null, null, TEST_EMAIL, TEST_NAME);
     }
 }

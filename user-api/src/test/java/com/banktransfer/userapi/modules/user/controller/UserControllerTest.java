@@ -11,12 +11,11 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import static com.banktransfer.userapi.modules.common.util.JsonHelper.asJsonString;
+import static com.banktransfer.userapi.modules.common.helper.JsonHelper.asJsonString;
 import static com.banktransfer.userapi.modules.user.helper.UserHelper.oneCnpjUserRequest;
 import static com.banktransfer.userapi.modules.user.helper.UserHelper.oneCpfUserRequest;
 import static org.hamcrest.CoreMatchers.nullValue;
 import static org.mockito.ArgumentMatchers.eq;
-import static org.mockito.ArgumentMatchers.isNull;
 import static org.mockito.Mockito.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;

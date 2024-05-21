@@ -1,4 +1,4 @@
-package com.banktransfer.userapi.modules.common.util;
+package com.banktransfer.userapi.modules.common.helper;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
