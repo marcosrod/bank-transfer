@@ -15,7 +15,7 @@ public class DocumentUtilTest {
 
     @Test
     void validateCpfDigits_shouldReturnFalse_whenInvalidCpf() {
-        assertFalse(DocumentUtil.validateCpfDigits(UserHelper.oneCpfUser().getCpf().substring(0, 5)));
+        assertFalse(DocumentUtil.validateCpfDigits(UserHelper.oneCnpjUser().getCnpj()));
     }
 
     @Test
@@ -25,6 +25,6 @@ public class DocumentUtilTest {
 
     @Test
     void validateCpfDigits_shouldReturnFalse_whenInvalidCnpj() {
-        assertFalse(DocumentUtil.validateCnpjDigits(UserHelper.oneCnpjUser().getCnpj().substring(0, 5)));
+        assertFalse(DocumentUtil.validateCnpjDigits(UserHelper.oneCpfUser().getCpf()));
     }
 }
